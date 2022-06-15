@@ -2,17 +2,6 @@ import os
 from cryptography.fernet import Fernet
 
 
-#On a besoin d'un mot de passe pour decrypter
-mdp = "iwantmydata"
-#Ce que doit trouver l'utilisateur
-mdp_input = input("Entrez le mot de passe pour décrypter vos données\n") 
-#Le mdp que l'utilisateur entre
-
-#Tout ceci est utilisé un peu plus tard dans le code
-
-
-
-
 fichiers = []
 
 
@@ -29,6 +18,14 @@ with open("theKey.key", "rb") as key:
 	cleSecrete = key.read()     
 #On recupere la clé dans cleSecrete
 
+
+
+
+#On a besoin d'un mot de passe pour decrypter
+mdp = "iwantmydata"
+#Ce que doit trouver l'utilisateur
+mdp_input = input("Entrez le mot de passe pour décrypter vos données\n") 
+#Le mdp que l'utilisateur entre
 
 
 if mdp == mdp_input:
